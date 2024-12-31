@@ -4,7 +4,7 @@ html {
 
 *,
 *::before,
-*::after{
+*::after {
 	margin: 0;
 	padding: 0;
 	box-sizing: inherit;
@@ -14,10 +14,12 @@ body {
 	font-family: "Roboto", serif;
 }
 
-.hero {
-	background-color: #1F2937;
+.header {
+	background-color: #1f2937;
 	padding: 0 13vw;
 	height: 82vh;
+	display: flex;
+	flex-direction: column;
 }
 
 .nav {
@@ -32,14 +34,55 @@ body {
 }
 
 .nav-logo {
-	font-size: 24px;
-	color: #F9FAF8;
+	font-size: 28px;
+	color: #f9faf8;
 	font-weight: 900;
 	margin-right: auto;
 }
 
 .nav-link,
+.hero-sec-text,
+.hero-signup {
+	font-size: 20px;
+	color: #e5e7ebc1;
+}
+
+.hero {
+	padding: 16px;
+	flex: 1;
+	display: flex;
+	gap: 54px;
+}
+
+.hero-main-text {
+	font-size: 52px;
+	font-weight: 900;
+	color: #f9faf8;
+}
+
+.hero-text,
+.hero-image {
+	flex: 1;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
 .hero-sec-text {
-	font-size: 18px;
-	color: #ebedf0c0;
+	margin: 8px 0px 16px;
+}
+
+
+.hero-signup {
+	color: #f9faf8;
+	font-weight: 500;
+	background-color: #3882f6;
+	align-self: flex-start;
+	padding: 8px 30px;
+	border: none;
+	border-radius: 8px;
+}
+
+img {
+	height: 260px;
 }
