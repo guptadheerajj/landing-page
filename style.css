@@ -82,14 +82,17 @@ body {
 	margin: 8px 0px 16px;
 }
 
-.hero-signup {
+.hero-signup, .news-letter-signup {
 	color: #f9faf8;
 	font-weight: 500;
+	padding: 8px 30px;
+	border-radius: 8px;
+}
+
+.hero-signup{
+	border: none;
 	background-color: #3882f6;
 	align-self: flex-start;
-	padding: 8px 30px;
-	border: none;
-	border-radius: 8px;
 }
 
 .hero-image img {
@@ -164,9 +167,48 @@ body {
 .author {
 	color: #1f2937;
 	font-size: 24px;
-	font-weight: 900;
+	font-weight: 600;
 	align-self: flex-end;
 }
+
+
+/* new-letter part starts here */
+.news-letter-container {
+	height: 350px;
+	max-width: 1120px;
+	margin: auto;
+	align-content: center;
+}
+
+.news-letter {
+	background-color: #3882F6;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	padding: 38px;
+	border-radius: 8px;
+	margin: 0 auto;
+}
+
+.news-letter-heading {
+	font-size: 22px;
+	font-weight: 500;
+	color: #F9FAF8;
+}
+
+.news-letter-text {
+	font-size: 18px;
+	color: #f9faf8c8;
+
+}
+
+.news-letter-signup {
+	font-size: 18px;
+	background-color: #3882F6;
+	border: 2px solid #f9faf8;
+	
+}
+
 
 
 
