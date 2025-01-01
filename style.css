@@ -92,13 +92,13 @@ body {
 	border-radius: 8px;
 }
 
-img {
+.hero-image img {
 	height: 260px;
 }
 
 /* main part starts here */
 .main {
-	padding: 42px 13vw;
+	padding: 42px 20vw;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -133,16 +133,53 @@ img {
 	overflow: hidden;
 }
 
+.card-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: top center; /* This will ensure the top of the image is always visible */
+    display: block;
+}
+
 .card-text {
 	margin: 8px 0 0;
 }
+
+
+/* quote part starts here */
+
+.quote-container {
+	background-color: #e5e7eb;
+	padding: 90px 22vw;
+	display: flex;
+	flex-direction: column;
+}
+
+.quote {
+	font-size: 35px;
+	font-weight: 300;
+	font-style: italic;
+}
+
+.author {
+	color: #1f2937;
+	font-size: 24px;
+	font-weight: 900;
+	align-self: flex-end;
+}
+
+
 
 
 
 
 @media screen and (max-width: 480px) {
 	.hero-image img {
-		width: 80vw;
+		width: 70vw;
 		height: auto;
+	}
+
+	.main, .quote-container{
+		padding: 2vw 43px;
 	}
 }
