@@ -17,15 +17,15 @@ body {
 .header {
 	background-color: #1f2937;
 	padding: 0 13vw;
-	min-height: 82vh;
+	min-height: 100vh;
 	display: flex;
 	flex-direction: column;
 
 	/* background-image: url('https://media1.tenor.com/m/N5v8Cqz0DY0AAAAd/makise-kirusu-steins-gate.gif'); */
-	/* background-image: url('https://arthifis.wordpress.com/wp-content/uploads/2018/07/steins-gate-time-travel-explanation.gif?resize=500%2C281');
-	background-size: cover;      
+	background-image: url('./assets/makise-gif.gif');
+	background-size:cover;      
     background-position: center; 
-    background-repeat: no-repeat; */
+    background-repeat: no-repeat;
 }
 
 .nav {
@@ -46,11 +46,20 @@ body {
 	margin-right: auto;
 }
 
+.nav-logo img {
+	width: 250px;
+	display: block;
+}
+
 .nav-link,
 .hero-sec-text,
 .hero-signup {
 	font-size: 20px;
 	color: #e5e7ebc1;
+}
+
+.nav-link {
+	font-weight: 500;
 }
 
 .hero {
@@ -97,19 +106,20 @@ body {
 
 .hero-image img {
 	height: 260px;
+	display: block;
 }
 
 /* main part starts here */
 .main {
-	padding: 42px 20vw;
+	padding: 52px 18vw;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	gap: 46px;
+	color: #1f2937;
 }
 
 .main-heading {
-	color: #1f2937;
 	font-size: 40px;
 	font-weight: 900;
 	padding: 0;
@@ -125,13 +135,13 @@ body {
 }
 
 .card {
-	width: 170px;
+	width: 200px;
 	text-align: center;
 }
 
 .card-image {
 	width: 100%;
-	height: 170px;
+	height: 200px;
 	border-radius: 16px;
 	overflow: hidden;
 }
@@ -144,8 +154,10 @@ body {
     display: block;
 }
 
-.card-text {
+.card-name {
 	margin: 8px 0 0;
+	font-size: 20px;
+    font-weight: 600;
 }
 
 
