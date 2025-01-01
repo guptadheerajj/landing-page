@@ -209,7 +209,16 @@ body {
 	
 }
 
-
+.footer {
+	background-color: #1f2937;
+	color: #f9faf8de;
+	height: 120px;
+	display: flex;
+	flex-direction: column;
+	gap: 4px;
+	justify-content: center;
+	align-items: center;
+}
 
 
 
